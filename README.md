@@ -2,9 +2,11 @@
 The Pneumonia Classifier is an AI-powered application designed to accurately detect pneumonia from chest X-ray images. Using a CNN ResNet18 model, trained on a dataset of ~6000 images, this tool offers high precision in identifying pneumonia, helping to assist in early detection with 91% accuracy.
 
 
-## Previews 👀  
+## Previews 👀 
+User Interface:
 [![UI Screenshot](images/UI_Image_2.png)]() 
 
+Training Results:
 [![Accuracy Metrics](ADD_ACCURACY_SCREENSHOT_URL_HERE)]()  
 
 ## Live Demo 🚀  
