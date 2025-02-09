@@ -54,7 +54,7 @@ pip install -r requirements.txt
 python app.py
 ```
 
-4. Access web interface at http://localhost:5000
+4. Access web interface at http://127.0.0.1:5000
 
 ## Docker Deployment 🐳
 1. Build Docker image:
