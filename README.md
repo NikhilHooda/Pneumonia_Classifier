@@ -29,8 +29,8 @@ Training Results:
 ## Dataset 🔢  
 Trained on the [Chest X-Ray Images (Pneumonia) dataset](https://www.kaggle.com/datasets/paultimothymooney/chest-xray-pneumonia) from Kaggle:
 - 5,856 training images (1,583 normal, 4,273 pneumonia)
-- 624 validation images
-- 16 test images
+- 624 testing images
+- 16 validation images
 
 ## Installation 📦  
 To run locally:  
