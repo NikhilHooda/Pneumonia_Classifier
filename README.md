@@ -7,7 +7,7 @@ User Interface:
 [![UI Screenshot](images/UI_Image_2.png)]() 
 
 Training Results:
-[![Accuracy Metrics](ADD_ACCURACY_SCREENSHOT_URL_HERE)]()  
+[![Accuracy Metrics](images/training_results.png)]()  
 
 ## Live Demo 🚀  
 [Click here to watch demo video](ADD_VIDEO_URL_HERE)  
