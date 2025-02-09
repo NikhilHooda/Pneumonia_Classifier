@@ -10,7 +10,7 @@ Training Results:
 [![Accuracy Metrics](images/training_results.png)]()  
 
 ## Live Demo 🚀  
-[Click here to watch demo video](ADD_VIDEO_URL_HERE)  
+[Click here to watch demo video](https://youtu.be/WvA1P5bwaVU)  
 
 ## Features ✨  
 - **ResNet18 CNN Model**: Custom-trained on medical imaging data  
