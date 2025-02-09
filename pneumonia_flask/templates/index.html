@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pneumonia Classifier</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            margin: 0;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+            background: linear-gradient(to right, #0a1f44, #1e3c72);
+            color: white;
+            position: relative;
+            overflow: hidden;
+        }
+
+        body::before {
+            content: "";
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            background: url('https://www.transparenttextures.com/patterns/cubes.png');
+            opacity: 0.3;
+            z-index: -1;
+        }
+
+        .container {
+            background: rgba(255, 255, 255, 0.1);
+            padding: 30px;
+            border-radius: 10px;
+            backdrop-filter: blur(10px);
+            width: 90%;
+            max-width: 500px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+        }
+
+        h1 {
+            font-size: 3.5rem;
+            font-weight: 700;
+            margin-bottom: 1rem;
+            text-shadow: 2px 2px 4px rgba(0,0,0,0.2);
+        }
+
+        .subtitle {
+        white-space: nowrap;
+        font-size: 1.2em;
+        margin: 10px 0 30px 0;
+        color: white;
+        opacity: 0.9;
+    }
+
+        input[type="file"] {
+            padding: 10px;
+            background: white;
+            color: #0a1f44;
+            border: none;
+            border-radius: 5px;
+        }
+
+        button {
+        padding: 12px 25px;
+        background-color: #1e3c72;  /* Matches background gradient end color */
+        color: white;
+        border: none;
+        border-radius: 5px;
+        font-size: 1.1em;
+        cursor: pointer;
+        transition: background-color 0.3s ease;
+    }
+
+    button:hover {
+        background-color: #0a1f44;  /* Matches background gradient start color */
+    }
+
+        .images {
+            margin-top: 20px;
+        }
+
+        img {
+            max-width: 300px;
+            border-radius: 10px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+        }
+    </style>
+</head>
+<body>
+    <h1>Pneumonia Classifier</h1>
+    <p class="subtitle">ResNet18 CNN model for classifying patient X-rays to detect pneumonia with 91% accuracy</p>
+    
+    <div class="container">
+        <h2>Upload Image</h2>
+        <form method="POST" enctype="multipart/form-data">
+            <input type="file" name="image" accept="image/*" required>
+            <br><br>
+            <button type="submit">Predict</button>
+        </form>
+
+        {% if original_image and prediction %}
+        <div class="images">
+            <div>
+                <h3>X-Ray Scan</h3>
+                <img src="{{original_image}}" alt="Image">
+            </div>
+            <div>
+                <h3>Prediction:</h3>
+                <p>{{prediction}}</p>
+            </div>
+        </div>
+        {% endif %}
+    </div>
+</body>
+</html>
