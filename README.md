@@ -3,7 +3,6 @@ The Pneumonia Classifier is an AI-powered application designed to accurately det
 
 
 ## Previews 👀  
-[![UI Screenshot](images/UI_Image_1.png)]()  
 [![UI Screenshot](images/UI_Image_2.png)]() 
 
 [![Accuracy Metrics](ADD_ACCURACY_SCREENSHOT_URL_HERE)]()  
