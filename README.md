@@ -38,6 +38,7 @@ To run locally:
 1. Clone repository:  
 ```bash
 git clone https://github.com/yourusername/pneumonia-classifier.git
+```
 
 2. Set up Python environment:
 ```bash
@@ -46,10 +47,12 @@ python -m venv venv
 source venv/bin/activate  # Linux/MacOS
 venv\Scripts\activate  # Windows
 pip install -r requirements.txt
+```
 
 3. Start Flask server:
 ```bash
 python app.py
+```
 
 4. Access web interface at http://localhost:5000
 
@@ -57,15 +60,16 @@ python app.py
 1. Build Docker image:
 ```bash
 docker build -t pneumonia-classifier.
+```
 
 2. Run container:
 docker run -p 5000:5000 pneumonia-classifier
 
-Environment Variables 🌎
+## Environment Variables 🌎
 Create .env file with:
 ```python
 FLASK_ENV=development
 MODEL_PATH=./models/resnet18_pneumonia.pth
+```
 
 Disclaimer: This tool is intended for research purposes only. Always consult a medical professional for diagnostic decisions.*
- 
