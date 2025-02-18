@@ -15,7 +15,7 @@ Training Results:
 ## Features ✨  
 - **ResNet18 CNN Model**: Custom-trained on medical imaging data  
 - **Instant Analysis**: Web interface for quick X-ray uploads and predictions  
-- **Cloud Deployment**: Serverless endpoint deployment using Docker  
+- **Cloud Deployment**: Serverless endpoint deployment using Docker and AWS Lambda  
 - **High Accuracy**: 91% validation accuracy on medical test data  
 - **Medical-Grade Dataset**: Trained on 6,000+ curated chest X-ray images  
 
